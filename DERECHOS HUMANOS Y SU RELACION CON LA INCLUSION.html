@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceptual: Derechos Humanos, Inclusión y Conceptos Relacionados</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 20px;
+        }
+        .mapa-conceptual {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-out;
+        }
+        h1 {
+            text-align: center;
+            color: #3498db;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            animation: slideIn 1.5s ease-out;
+        }
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #3498db;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #3498db;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #3498db;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #3498db;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #3498db transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: #fff;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .content h2 {
+            color: #3498db;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        .content p {
+            color: #333;
+        }
+        .concept {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .concept h3 {
+            color: #2ecc71;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        .concept p {
+            font-size: 0.95em;
+        }
+        .modern-challenges {
+            background-color: #1abc9c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-out;
+        }
+        .modern-challenges h2 {
+            color: white;
+            text-align: center;
+        }
+        .term {
+            background-color: #16a085;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+            animation: fadeInRight 1.5s ease-in-out;
+        }
+        .term h3 {
+            margin-top: 0;
+            color: #ecf0f1;
+            display: flex;
+            align-items: center;
+        }
+        .term p, .term ul {
+            color: #ecf0f1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInLeft {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInRight {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .bibliography {
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: #7f8c8d;
+        }
+        .bibliography h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+ <div class="mapa-conceptual">
+        <h1>Historia de los Derechos Humanos y Conceptos Relacionados</h1>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>1215: Magna Carta</h2>
+                    <p>Limitó el poder de los monarcas ingleses, sentando las bases para los derechos individuales y el estado de derecho.</p>
+                    <div class="concept">
+                        <h3>Segmentación</h3>
+                        <p>La sociedad medieval estaba fuertemente segmentada en clases sociales, con el poder concentrado en la nobleza.</p>
+                    </div>
+                    <div class="connection"></div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>1689: Declaración de Derechos Inglesa</h2>
+                    <p>Estableció la libertad de expresión en el Parlamento y limitó los poderes del monarca, marcando el inicio de la monarquía constitucional.</p>
+                    <div class="concept">
+                        <h3>Exclusión</h3>
+                        <p>Muchos grupos, como las mujeres y los pobres, seguían excluidos de los derechos políticos y las decisiones importantes.</p>
+                    </div>
+                    <div class="connection"></div>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>1776: Declaración de Independencia de EE.UU.</h2>
+                    <p>Proclamó los derechos inalienables a la vida, la libertad y la búsqueda de la felicidad. Inspiró movimientos democráticos en todo el mundo.</p>
+                    <div class="concept">
+                        <h3>Segregación</h3>
+                        <p>A pesar de los ideales de igualdad, la esclavitud y la segregación racial persistieron en EE.UU. por más de un siglo.</p>
+                    </div>
+                    <div class="connection"></div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>1789: Declaración de los Derechos del Hombre y del Ciudadano</h2>
+                    <p>Definió los derechos naturales del hombre durante la Revolución Francesa, sentando las bases para el constitucionalismo moderno.</p>
+                    <div class="concept">
+                        <h3>Inclusión</h3>
+                        <p>Primeros pasos hacia la inclusión de más grupos en la ciudadanía, aunque la igualdad de género aún estaba lejos.</p>
+                    </div>
+                    <div class="connection"></div>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>1948: Declaración Universal de los Derechos Humanos</h2>
+                    <p>Adoptada por la ONU, este documento proclama los derechos inherentes a todos los seres humanos, sin distinción de raza, sexo, nacionalidad o religión.</p>
+                    <div class="concept">
+                        <h3>Inclusión Global</h3>
+                        <p>Establece un marco universal para la protección de los derechos humanos, basado en la igualdad y dignidad de todas las personas.</p>
+                    </div>
+                    <div class="connection"></div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>1989: Convención sobre los Derechos del Niño</h2>
+                    <p>Primera ley internacional que reconoce los derechos específicos de los niños, garantizando su protección y bienestar en todo el mundo.</p>
+                    <div class="concept">
+                        <h3>Protección Infantil</h3>
+                        <p>Reafirma el derecho de todos los niños a un trato justo y la protección contra la explotación.</p>
+                    </div>
+                    <div class="connection"></div>
+                </div>
+            </div>
+        </div>
+ 
+<!-- Desafíos modernos: Inclusión, segregación, exclusión -->
+        <div class="modern-challenges">
+            <h2>Siglo XXI: Desafíos Actuales</h2>
+            <p>En la actualidad, la lucha por los derechos humanos continúa. Los conceptos de segmentación, segregación, exclusión e inclusión siguen siendo relevantes.</p>
+            
+            <div class="term">
+                <h3>Segmentación</h3>
+                <p>La segmentación se refiere a la división de la sociedad en grupos específicos, generalmente según su estatus económico, raza, género o educación. Un ejemplo de segmentación es el acceso diferenciado a la salud o educación basado en la capacidad económica.</p>
+                <p><strong>Ejemplo:</strong> Los sistemas de educación privada frente a los públicos representan una clara segmentación económica.</p>
+                <p><strong>Frase de autor:</strong> "La segmentación de las oportunidades es una herida en el tejido social que sólo se cura con justicia" (Sen, 1999).</p>
+            </div>
+
+            <div class="term">
+                <h3>Segregación</h3>
+                <p>La segregación implica la separación de grupos dentro de una sociedad. Un claro ejemplo de segregación fue el Apartheid en Sudáfrica, donde las personas eran separadas por su raza.</p>
+                <p><strong>Ejemplo:</strong> Aún hoy en día, en algunas ciudades del mundo, existen barrios segregados por origen étnico o económico.</p>
+                <p><strong>Frase de autor:</strong> "La segregación no sólo divide a las personas, sino que destruye la posibilidad de una verdadera comunidad" (King, 1963).</p>
+            </div>
+
+            <div class="term">
+                <h3>Exclusión</h3>
+                <p>La exclusión social es el proceso mediante el cual ciertos individuos o grupos quedan fuera de la participación plena en la sociedad. Esta exclusión puede ser económica, social o política.</p>
+                <p><strong>Ejemplo:</strong> Las personas con discapacidad a menudo enfrentan exclusión en el empleo y la educación, debido a la falta de infraestructura y apoyo adecuado.</p>
+                <p><strong>Frase de autor:</strong> "Una sociedad que excluye es una sociedad que niega la esencia misma de la humanidad" (Rawls, 1971).</p>
+            </div>
+
+            <div class="term">
+                <h3>Inclusión</h3>
+                <p>La inclusión es el proceso mediante el cual se asegura que todas las personas, independientemente de sus diferencias, puedan participar plenamente en todos los aspectos de la vida. La inclusión se trata de derribar barreras y asegurar que todas las personas tengan acceso a las mismas oportunidades.</p>
+                <p><strong>Ejemplo:</strong> Los programas de empleo inclusivo para personas con discapacidad son una muestra de cómo la inclusión puede ser una herramienta poderosa para la equidad.</p>
+                <p><strong>Frase de autor:</strong> "La inclusión es la única respuesta ética a la diversidad humana" (Nussbaum, 2006).</p>
+            </div>
+        </div>
+
+        <div class="bibliography">
+            <h4>Bibliografía</h4>
+            <p>Sen, A. (1999). *Desarrollo y Libertad*. Editorial Sudamericana.</p>
+            <p>King, M. L. (1963). *Cartas desde la cárcel de Birmingham*. Harper & Row.</p>
+            <p>Rawls, J. (1971). *Teoría de la Justicia*. Fondo de Cultura Económica.</p>
+            <p>Nussbaum, M. (2006). *Las fronteras de la justicia*. Harvard University Press.</p>
+	    <p>Connell, R. W. (1987). <em>Gender and Power: Society, the Person and Sexual Politics</em>. Cambridge: Polity Press.</p>
+            <p>Massey, D. S., & Denton, N. A. (1993). <em>American Apartheid: Segregation and the Making of the Underclass</em>. Harvard University Press.</p>
+            <p>Silver, H. (1994). "Social Exclusion and Social Solidarity: Three Paradigms." <em>International Labour Review</em>, 133(5-6).</p>
+            <p>Ainscow, M., & Booth, T. (2002). <em>Index for Inclusion: Developing Learning and Participation in Schools</em>. Bristol: Centre for Studies on Inclusive Education.</p>
+        </div>
+    </div>
+</body>
+</html>
